@@ -1,0 +1,21 @@
+[package]
+name = "wasmcov"
+version = "0.0.1"
+edition = "2021"
+description = "A set of helpers for coverage of wasm modules"
+license = "MIT"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = "2.0.38"
+quote = "1.0.33"
+near-sdk = { workspace = true }
+serde_json = { version = "1.0", features = ["arbitrary_precision"] }
+
+minicov = "0.3"
+
